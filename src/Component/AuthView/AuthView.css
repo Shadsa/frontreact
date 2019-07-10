@@ -1,0 +1,54 @@
+.login{
+    background-color: white;
+    border: lightgrey groose;
+    border-radius: 2%;
+    padding: 3%;
+    margin: 7% 30% 7% 30%; 
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #fcfcfc;
+}
+
+.passwordChange {
+    display:block;
+	margin-left:auto;
+	text-align:right;
+	overflow:hidden; 
+}
+
+.icon-form {
+    display:block;
+    margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	overflow:hidden;
+}
+
+img{
+    margin: 5%;
+    text-align: center;
+}
+.row{
+        justify-content: center;
+}
+
+/* Loading Screen */
+
+.spinner-login {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 96px;
+    height: 96px;
+    margin: 0 0 0 -48px;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* End Loading Screen */

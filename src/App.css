@@ -1,0 +1,37 @@
+html,
+body {
+  background-color: whitesmoke;
+}
+.nav-link {
+  display: inline;
+}
+.navbar {
+  display: flex;
+  background-color: rgb(7, 4, 4);
+}
+.item {
+  flex-basis: 70%;
+  margin: 0 10%;
+}
+.header {
+  justify-content: space-between;
+  flex-basis: 30%;
+  min-height: 0;
+  min-width: 0;
+}
+.mr-2.navbar-toggler {
+  background-color: white;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+img {
+  margin: 5%;
+  text-align: center;
+}
+
+.list-item-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

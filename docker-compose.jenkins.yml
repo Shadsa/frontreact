@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+    # Application Container
+    mmw-webview-build:
+        build: ./build_jenkins
+        volumes:
+            - ./:/var/jenkins_home/workspace/mmw-webview
+
+
+
+
+networks:
+  default:
+    external:
+      name: jenkins

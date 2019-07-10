@@ -1,0 +1,10 @@
+.yearSelectorBlock{
+    padding: 10px 0 30px 0;
+    margin: 10px;
+}
+
+@media (max-width: 500px){
+    .rc-slider-mark{
+        display: none;
+    }
+}

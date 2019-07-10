@@ -1,0 +1,17 @@
+@import url('https://unpkg.com/leaflet@1.0.1/dist/leaflet.css');
+
+.leaflet-container {
+  top: 0;
+  bottom: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 420px;
+  width: 95%;
+}
+
+@media (min-height: 700px) {
+  .leaflet-container {
+    height: 600px;
+  }
+}

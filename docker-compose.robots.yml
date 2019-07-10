@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+    # Application Container
+    mmw-webview:
+      build: .
+    
+    # Robots Containers
+    mmw-robot-framework:
+        image: ppodgorsek/robot-framework:latest
+        depends_on:
+            - mmw-webview
+        volumes:
+            - ./tests_auto/log:/opt/robotframework/reports
+            - ./tests_auto/robot_scripts:/opt/robotframework/tests
+        environment:
+            URL: http://mmw-webview:80
+            BROWSER: Firefox
+
+networks:
+  default:
+    external:
+      name: jenkins
